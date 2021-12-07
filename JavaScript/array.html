@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		background-color: grey;
+	}
+</style>
+<body>
+	<!-- form nhập vào từng số, in ra tất các số vừa nhập -->
+	<form>
+		Nhập vào số
+		<input type="number" id = "input_number">
+		<br>
+		<button type = "button" onclick="button_turn_in()">Nhập vào</button>
+		<button type = "button" onclick="button_turn_out()">Xuất ra</button>
+	</form>
+	<div id = "ket_qua"></div>
+
+	<!-- form nhập vào số phần tử, in ra random số số phần tử -->
+	<form>	
+		Nhập vào số phần tử
+		<input type="number" id = "input_num">
+		<br>
+		<button type = "button" onclick="button_turn_out_random()">Xuất ra</button>
+	</form>
+	<div id = "ket_qua_random"></div>
+	<div id = "ket_qua_so_lon_nhat"></div>
+
+	<script type="text/javascript">
+		let mang = [];
+		function button_turn_in(){
+			let value_input_number = parseFloat(document.getElementById('input_number').value);
+			mang.push(value_input_number);
+		}
+		
+		function button_turn_out(){
+			document.getElementById('ket_qua').innerHTML = mang;
+		}
+
+		function button_turn_out_random(){
+			let value_input_num = document.getElementById('input_num').value;
+			let mang = [];
+			for (let i = 0; i < value_input_num; i++){
+				mang.push(Math.round(Math.random() * 10));
+			}
+			document.getElementById('ket_qua_random').innerHTML = (mang);
+			let so_lon_nhat = 0;
+			for (let j = 0; j < value_input_num; j++){
+				if (so_lon_nhat < mang[j]){
+					so_lon_nhat = mang[j];
+				}
+			}
+			document.getElementById('ket_qua_so_lon_nhat').innerHTML = ('So lon nhat la: ' + so_lon_nhat);
+		}
+
+	</script>
+</body>
+</html>

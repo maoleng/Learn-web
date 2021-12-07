@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_tong{
+			width : 100%;
+			height : 700px;
+			background: pink;
+		}
+		#div_tren{
+			width : 100%;
+			height:  20%;
+			background:  red;
+		}
+		
+		#div_tren > .trai{
+			width : 50%;
+			height: 100%;
+			background:  blue;
+			float: left;
+		}
+		#div_tren > .phai{
+			width : 50%;
+			height:  100%;
+			background:  purple;
+			float: right;
+		}
+		#div_tren > .phai > .tren{
+			width:  100%;
+			height:  80%;
+			background:  yellow;
+			text-align: right;
+		}
+		#div_tren > .phai > .duoi{
+			width : 100%;
+			height : 20%;
+			background:  gray;
+			text-align:  right;
+		}
+
+		/*div duoi*/
+		#div_duoi{
+			width : 100%;
+			height : 80%;
+			background : yellow;
+		}
+		#div_duoi > .trai{
+			width : 29%;
+			height : 100%;
+			background:  black;
+			float : left;
+			border-left:  1px solid orange;
+		}
+		#div_duoi > .giua{
+			width : 40%;
+			height : 100%;
+			background:  grey;
+			float : left	
+			
+		
+		}
+		#div_duoi > .phai{
+			width : 30%;
+			height : 100%;
+			background:  black;
+			float : left;
+		}
+	</style>
+</head>
+<body>
+	<div id = "div_tong">
+		<div id = "div_tren">
+			<div class = "trai" style="position: relative;">
+				<img src="./viktor.png" style="height:  100%; position: absolute; z-index: 1;">
+			</div>	
+			<div class="phai">
+				<div class = "tren">
+					<select>
+						<option>
+							Hội cây cảnh rẻ tiền
+						</option>
+					</select>
+					<button type =" button">
+						Gâu gâu
+					</button>
+				</div>
+				<div class = "duoi">
+					<a href="">	
+						<img src="./jack1.jpg" style = "height:100%">
+						<img src="./jack1.jpg" style = "height:100%">
+						<img src="./jack1.jpg" style = "height:100%">
+					</a>	
+				</div>
+			</div>
+		</div>
+
+		<!-- div duoi -->
+		<div id = "div_duoi">
+			<div class="trai" style="position: relative">
+				<img src="./jack2.png" style="height: 50%; position: absolute; bottom: 0px; width: 100%;">
+			</div>
+			<div class="giua">
+
+
+			</div>
+
+			<div class="phai">
+				
+			</div>
+
+		</div>
+
+		
+
+		<img src="./viktor2.png" style="height: 10%;position: fixed; top: 250px; left: 250px">
+	</div>
+</body>
+</html>

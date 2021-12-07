@@ -1,0 +1,91 @@
+<!-- Tạo 1 input. Yêu cầu:
+
+In ra số chẵn, số lẻ, thập phân (*In ra số nguyên tố)
+In các số từ 1 tới số đó (*Từ số đó tới 1 nếu là số âm)
+**In ra đã nhập bao nhiêu số
+
+****Ấn phím enter để nhập thay vì ấn nút -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		background-color: grey;
+	}
+</style>
+<body>
+	<form>
+		Nhập vào số: 
+		<input type="number" id = "input_num">	
+		<button type = "button" onclick="button_check()">
+			Kiểm tra
+		</button>
+	</form>
+	<div id = "div_hien_thi_ket_qua">
+	</div>
+
+	<br><br><br>
+
+	<form>
+		Kiểm tra số nguyên tố: 
+		<input type="number" id = "input_num_prime">
+		<button onclick="button_check_prime()" type="button">
+			Kiểm tra
+		</button>
+	</form>
+	<div id = "div_hien_thi_ket_qua_kiem_tra_so_nguyen_to">
+	</div>
+
+	<br><br><br>
+
+	<form>
+		Nhập 1 số, hiển thị dãy số:
+		<input type="number" id = "input_num_print">
+		<button onclick="button_print_num()" type="button">
+			In ra
+		</button>
+	</form>
+	<div id = "div_hien_thi_ket_qua_in_ra">
+	</div>
+
+	<script type="text/javascript">
+		function button_check(){
+			let value_input_num = document.getElementById('input_num').value;
+			if (value_input_num % 2 == 0){
+				document.getElementById('div_hien_thi_ket_qua').innerHTML = ('So do la so chan');
+			}else if (value_input_num % 2 == 1){
+				document.getElementById('div_hien_thi_ket_qua').innerHTML = ('So do la so le');
+			}else{
+				document.getElementById('div_hien_thi_ket_qua').innerHTML = ('So do la so thap phan');
+			}
+		}
+
+		function button_check_prime(){
+			let i, dem = 0 ;
+			let value_input_num_prime = document.getElementById('input_num_prime').value;
+			for (i = 2; i < value_input_num_prime; i++){
+				if (value_input_num_prime % 2 == 0){
+					dem += 1;
+				}
+			}
+			if (dem != 0){
+				document.getElementById('div_hien_thi_ket_qua_kiem_tra_so_nguyen_to').innerHTML = ('Khong phai so nguyen to');
+			}else{
+				document.getElementById('div_hien_thi_ket_qua_kiem_tra_so_nguyen_to').innerHTML = ('Do la so nguyen to');
+			}
+		}
+
+		function button_print_num(){
+			let value_input_num_print = document.getElementById('input_num_print').value;
+			let i;
+			for (i = 1; i < value_input_num_print; i++){
+				document.getElementById('div_hien_thi_ket_qua_in_ra').innerHTML = (i);
+			}
+			
+		}
+	</script>
+</body>
+</html>

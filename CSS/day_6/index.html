@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#tong{
+			width: 100%;
+			height: 700px;
+			background: red;
+		}
+		#tong > .san_ho{
+			width: 20%;
+			height: 100%;
+			background: black;
+			float: left;
+			position: relative;
+
+		}
+		#tong > .cau_vong{
+			width: 5%;
+			height: 100%;
+			background: white;
+			float: left;
+			background-image: url("F:/DOWNLOAD/Bai 5.2 - My Thuat/IMAGES/soc.jpg");
+			
+		}
+		#tong > .con_sua{
+			width: 75%;
+			height: 100%;
+			background: white;
+			float: left;
+			background-image: url("./sua1.gif");
+			background-repeat: no-repeat;
+			background-position: center;
+			position: relative;
+			z-index: 99;
+		}
+		#tong > .con_sua > .van_ban{
+			width:  70%;
+			height: 100%;
+			background:  white;
+			float: left;
+			position: absolute ;
+		}
+		#tong > .con_sua > .van_ban > .tieu_de{
+			width: 100%;
+			height: 20%;
+		}
+		#tong > .con_sua > .van_ban > .form{
+			width:  100%;
+			height:  80%;
+			background:  lightgreen;
+		}
+		#tong > .con_sua > .hinh_anh{
+			width:  30%;
+			height: 100%;
+			background:  white;
+			float: left;
+			relative:  absolute;
+		}
+		.phong_chu{
+			font-size: 150%;
+			text-align: left;
+		}
+	</style>
+</head>
+<body >
+	<div id = "tong">
+		<div class = "san_ho">
+			<img src="./sanho.gif" style="width: 110%;height: 100%;bottom: 0px;position: absolute;">
+		</div>
+		<div class="cau_vong">
+		</div>
+		<div class="con_sua" >
+			<div class="van_ban">
+				<div class="tieu_de">
+					<font style="font-size: 400%; color: green; font-weight: bold;">
+						 &#160 &#160THAM GIA CLB
+					</font>
+					<br>
+					<span class="phong_chu">
+						 &#160 &#160 &#160Quý độc gải hãy điền đầy đủ thông tin để tham gia phát triển CLB  &#160 &#160 &#160ngày càng vững mạnh hơn
+					</span>
+				</div>
+				<div class="form" style="align-content: center;">
+					<form>
+						<table width= "100%">
+							<tr width = "100%">
+								<td width="20%" align="center">
+									Họ và tên
+								</td>
+								<td width="80%">
+									<input type="text" size="50">
+								</td>
+							</tr>
+							<tr width = "100%">
+								<td width="20%" align="center">
+									Địa chỉ
+								</td>
+								<td width="80%">
+									<input type="text" size="50">
+								</td>
+							</tr>
+							<tr width = "100%">
+								<td width="20%" align="center">
+									Email 
+								</td>
+								<td width="80%">
+									<input type="Email" size="50">
+								</td>
+							</tr>
+							<tr width = "100%">
+								<td width="20%" align="center">
+									Điện thoại 
+								</td>
+								<td width="80%">
+									<input type="number" size="50">
+								</td>
+							</tr>
+							<tr width = "100%">
+								<td width="20%" align="center">
+									Ngày sinh 
+								</td>
+								<td width="80%">
+									<input type="number" style="width: 10%;">/
+									<input type="number" style="width: 10%;">/
+									<input type="number" style="width: 10%;">
+								</td>
+							</tr>
+							<tr width = "100%">
+								<td width="20%" align="center">
+									Đề tài 
+								</td>
+								<td width="80%">
+									<select>
+										<option>
+											Tìm hiểu sứa biển 
+										</option>
+									</select>
+								</td>
+							</tr>
+							<tr width = "100%">
+								<td width="20%" align="center" >
+									Nhóm 
+								</td>
+								<td width="80%">
+									<input type="radio" name="1"> Nghiên cứu <br>
+									<input type="radio" name="1"> Hải ngư<br>
+									<input type="radio" name="1"> Viễn dương<br>
+									<input type="radio" name="1"> Mỹ thuật<br>
+									<input type="radio" name="1"> Thực phẩm<br>
+									<input type="radio" name="1"> Sinh viên
+								</td>
+							</tr>
+							<tr width = "100%">
+								<td width="20%" align="center">
+									Gởi hình 
+								</td>
+								<td width="80%">
+									<input type="file" size="50">
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td rowspan="2" width="100%">
+									<button>
+										Tham gia
+									</button>
+									<button type="reset">
+										Xóa thông tin 
+									</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="hinh_anh">
+				<span style="position: absolute ;bottom: 0px; left: 800px;">
+					<img src="./nhom1a.jpg"><br>
+					<img src="./nhom1b.jpg"><br>
+					<img src="./nhom1c.jpg"><br>
+					<img src="./nhom1d.jpg"><br>
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

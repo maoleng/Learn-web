@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="grey">
+	<form>
+		Tên
+		<input type="text" id = "value_ten"><div id = "place_kiem_tra_ten"></div>
+		<br>Ngày sinh
+		<input type="date" id =  "value_ngay_sinh"><div id = "place_kiem_ngay_sinh"></div>
+		<br>Giới tính
+		<input type="radio" name="gioi_tinh">Nam
+		<input type="radio" name="gioi_tinh">Nữ<br><div id = "place_kiem_gioi_tinh"></div>
+		Email
+		<input type="email"><br>
+		Mật khẩu
+		<input type="password" id = "value_mat_khau"><br><div id = "place_kiem_tra_mat_khau"></div>
+		<button type="button" onclick="return kiemtra()">
+			Đăng ký
+		</button>
+	</form>
+
+	<script type="text/javascript">
+		function kiemtra(){
+			ten = document.getElementById('value_ten').value;
+			ngay_sinh = document.getElementById('value_ngay_sinh').value;
+			mang_gioi_tinh = document.getElementsByName('gioi_tinh');
+			mat_khau = document.getElementById("value_mat_khau").value;
+
+			let kiemtra = true;
+		
+			let regex_ten = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/;
+			if (regex_ten.test(ten) == false){
+				document.getElementById('place_kiem_tra_ten').innerHTML = "Tên khong hợp lệ"
+				kiemtra = false;
+			}else{
+				document.getElementById('place_kiem_tra_ten').innerHTML = ""
+				kiemtra = false;
+			}
+
+
+			if (ngay_sinh.length == 0) {
+				document.getElementById('place_kiem_ngay_sinh').innerHTML = "Ngày sinh khong hợp lệ"
+				kiemtra = false;
+			}else{
+				document.getElementById('place_kiem_ngay_sinh').innerHTML = ""
+				kiemtra = false;
+			}
+
+			let i;
+			let kiem_tra_gioi_tinh = false;
+			for (i = 0; i < mang_gioi_tinh.length; i++ ){
+				if (mang_gioi_tinh[i].checked){
+					kiem_tra_gioi_tinh = true;
+					
+				}
+			}
+
+			if (kiem_tra_gioi_tinh == false){
+				document.getElementById('place_kiem_gioi_tinh').innerHTML = "Giới tính khong hợp lệ"
+				kiemtra = false;
+			}else{
+				document.getElementById('place_kiem_gioi_tinh').innerHTML = ""
+				kiemtra = false;
+			}
+
+			if (mat_khau.length == 0){
+				document.getElementById("place_kiem_tra_mat_khau").innerHTML = "Mật khẩu không được để trống"
+				kiemtra = false;
+			}else{
+				document.getElementById("place_kiem_tra_mat_khau").innerHTML = ""
+				kiemtra = false;
+			}
+
+
+			if (kiemtra == false){
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

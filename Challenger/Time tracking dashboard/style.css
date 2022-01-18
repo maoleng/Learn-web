@@ -1,0 +1,153 @@
+body {
+	background-color: #0D1323;
+}
+.all {
+	width: 80%;
+	height: 60%;
+	background-color: black;
+	position: absolute;
+	margin: 5px;
+	top: 170px;
+	left: 150px;
+}
+.header {
+	width: 24%;
+	height: 100%;
+	background-color: #1D204B;
+	float: left;
+	border-radius: 10%;
+	position: relative;
+}
+
+.content {
+	width: 74%;
+	height: 100%;
+	background-color: #0D1323;
+	float: right;
+}
+
+.top__element {
+	width: 30%;
+	height: 48%;
+	background-color: #FF8B64;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px; 
+	border-radius: 10%;
+}
+
+.bot__element {
+	width: 30%;
+	height: 48%;
+	background-color: grey;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px; 
+	border-radius: 10%;
+}
+
+.all > .header > .top {
+	height: 70%;
+	width: 100%;
+	background-color: #5746EA;
+	border-radius: 10%;
+}
+
+.all > .header > .bot {
+	height: 30%;
+	width: 100%;
+	background-color: #1D204B;
+	border-radius: 10%;
+}
+
+.circle__avatar {
+	height: 90px;
+	width: 90px;
+	border: 3px solid white;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+}
+
+.header__word-1 {
+	color: white;
+	font-size: 15px;
+}
+
+.header__word-2 {
+	color: white;
+	font-size: 50px;
+}
+
+.mini__content-top_1 {
+	height: 25%;
+	width: 100;
+	background-color: #FF8B64;
+}
+
+.mini__content-top_2 {
+	height: 25%;
+	width: 100;
+	background-color: #56C2E6;
+}
+
+.mini__content-top_3 {
+	height: 25%;
+	width: 100;
+	background-color: #FF5E7D;
+}
+
+.mini__content-top_4 {
+	height: 25%;
+	width: 100;
+	background-color: #4BCF83;
+}
+
+.mini__content-top_5 {
+	height: 25%;
+	width: 100;
+	background-color: #7235D1;
+}
+
+.mini__content-top_6 {
+	height: 25%;
+	width: 100;
+	background-color: #F1C75B;
+}
+
+.mini__content-bot {
+	height: 75%;
+	width: 100;
+	background-color: #1D204B;
+	border-radius: 10%;
+	position: relative;
+	padding-left: 30px;
+
+}
+
+.mini__content-image {
+	float: right;
+	padding-right: 20px;
+}
+
+.mini__content-activity {
+	color: white;
+}
+
+.mini__content-time {
+	color: white;
+	font-size: 55px;
+}
+
+.mini__content-date {
+	color: white;
+}
+
+.header__word-3 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	padding-left: 25px
+}

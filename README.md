@@ -1,4 +1,6 @@
 <h1># Learn-HTML-CSS-JavaScript</h1><br>
+<h2>Instructor: Online teacher <a href = "https://github.com/J2TeamNNL">Nguyễn Nam Long</a></h2>
+<h3>Done at: 07/12/2021</h3>
 <h3>● HTML</h3><br>
 https://maoleng.github.io/Learn-web/HTML/day_1/day_1.html<br>
 https://maoleng.github.io/Learn-web/HTML/day_1.1/day_1.1.html<br>
@@ -17,7 +19,6 @@ https://maoleng.github.io/Learn-web/HTML/day_4/day_4.4.html<br>
 https://maoleng.github.io/Learn-web/CSS/day_5/index.html<br>
 https://maoleng.github.io/Learn-web/CSS/day_6/index.html<br>
 https://maoleng.github.io/Learn-web/CSS/day_7/index.html<br>
-https://maoleng.github.io/Learn-web/CSS/challenger/challenger.html<br>
 
  <h3>● JavaScript</h3><br>
  

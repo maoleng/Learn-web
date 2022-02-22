@@ -1,0 +1,143 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-family: 'Space Mono', monospace;
+}
+.total {
+	width: 100%;
+	height: 100vh;
+}
+.top {
+	width: 100%;
+	height: 25%;
+	background-color: #C5E4E7;
+	text-align: center;
+	padding-top: 90px;
+	box-sizing: border-box;
+	color: #3A5D5F;
+	font-size: 30px
+}
+.mid {
+	width: 100%;
+	height: 50%;
+	background-color: #C5E4E7;
+}
+.bot {
+	width: 100%;
+	height: 25%;
+	background-color: #C5E4E7;
+}
+.mid-left {
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+.mid-right {
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+.content {
+	width: 70%;
+	height: 100%;
+	background-color: white;
+	float: left;
+	border-radius: 30px;
+
+
+}
+.content-input {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: white;
+	padding: 25px;
+	box-sizing: border-box;
+	border-radius: 30px;
+}
+.content__bill {
+	font-size: 20px;
+	color: #566765;
+}
+.input__bill {
+	width: 95%;
+	height: 45px;
+	font-size: 20px;
+	padding-left: 5px;
+	text-align: right;
+	background-color: #F3F8FB;
+	color: #002A2C;
+	border: none;
+	border-radius: 10px;
+
+}
+
+.input__select {
+	width: 30%;
+	height: 45px;
+	background-color: #00474B;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	text-align: center;
+	font-size: 20px;
+	box-sizing: border-box;
+	line-height: 45px;
+	color: white;
+	border-radius: 10px;
+}
+.input__custom {
+	width: 30%;
+	height: 45px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	background-color: #F3F8FB;
+	border: none;
+	border-radius: 10px;
+}
+
+
+.content-result {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: white;
+	border-radius: 30px;
+	border: 20px solid white;
+	box-sizing: border-box;
+	background-color: #00474B;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 55px;
+}
+.header__tip {
+	float: left;
+	width: 40%;
+	height: 50px;
+	color: white;
+	font-size: 20px;
+}
+.result__tip {
+	float: right;
+	text-align: right;
+	color: #27C1AD;
+	font-size: 50px;
+	width: 40%;
+	height: 50px;
+	line-height: 50px;
+}
+.button__reset {
+	width: 90%;
+	height: 50px;
+	transform: translate(7%, 170%);
+	background-color: #0D686D;
+	border-radius: 10px;
+	color: #065C63;
+}
